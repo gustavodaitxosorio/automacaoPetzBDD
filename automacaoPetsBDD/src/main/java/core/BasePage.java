@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
 	
-// AguardarElemento ====================/
+// AguardarElemento ====================/ 
 	
 	public void esperarElemento(By by) {
 		WebDriverWait wait = new WebDriverWait(getDriver(), 20);
