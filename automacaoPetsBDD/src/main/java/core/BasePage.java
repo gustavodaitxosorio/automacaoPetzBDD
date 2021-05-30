@@ -56,9 +56,15 @@ public class BasePage {
 }
 
 // Obter Textos  ====================/
-	public String obterTexto(By by) {
+	public String obterTextoVisivel(By by) {
 		WebDriverWait wait = new WebDriverWait(getDriver(), 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(by));		
+		return getDriver().findElement(by).getText();
+	}
+	
+	public String obterTextoDisponivel(By by) {
+		WebDriverWait wait = new WebDriverWait(getDriver(), 20);
+		wait.until(ExpectedConditions.presenceOfElementLocated(by));		
 		return getDriver().findElement(by).getText();
 	}
 

@@ -15,8 +15,14 @@ public class InicialPage extends BasePage {
 	public void pesquisar(String Texto) {
 		esperarElemento(By.id("search"));
 		escrever(By.id("search"), Texto);
+		
 		clicarBotao(By.xpath("//button[@class=\"button-search\"]"));
 	}
 	
+	public void loginPage() {
+		esperarElemento(By.xpath("//div[@class=\"log-in\"]"));
+		clicarMenuSubMenu(By.xpath("//div[@class=\"log-in\"]"), 
+								By.xpath("//a[text()='Entrar']"));
+	}
 
 }

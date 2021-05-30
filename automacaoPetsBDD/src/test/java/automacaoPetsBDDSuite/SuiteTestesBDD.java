@@ -17,7 +17,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
 import pages.InicialPage;
-import tests.*;
+
 import org.apache.log4j.*;
 import pages.InicialPage;
 
@@ -26,7 +26,7 @@ import org.apache.log4j.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-	features = "src//test//resources//features//Exercicios.feature",
+	features = "src//test//resources//features", 
 	plugin = "pretty",
 	monochrome = true,
 	snippets = SnippetType.CAMELCASE
@@ -36,27 +36,26 @@ import org.apache.log4j.*;
 public class SuiteTestesBDD {
 	
 	private static InicialPage inicialPage = new InicialPage();
-//	
-////	//descomentar caso queira alterar o momento do screenshot
-////	private screenshot screenshot = new screenshot();
-//
+	
+//	//descomentar caso queira alterar o momento do screenshot
+//	private screenshot screenshot = new screenshot();
+
 	@BeforeClass
 	public static void inicializa(){
-		System.out.println("entrei no before");
+
 		if(Propriedades.LIMPAR_EVIDENCIAS)
 			Arrays.stream(new File("src\\test\\resources\\evidencias").listFiles()).forEach(File::delete);
 		if(Propriedades.LIMPAR_LOGS)
 			Arrays.stream(new File("src\\test\\resources\\Logs").listFiles()).forEach(File::delete);
 		inicialPage.inicialPage();
-//		System.out.println("passei do before");
 	}
-//	
-////Alterei o local para ao final de cada teste para manter um padrao devido ao looping de leitura do aqruivo .cvs
-////	@After
-////	public void tiraScreenshot() throws IOException {
-////		//screenshot.tirarScreenshot();
-////	}
-//	
+	
+//Alterei o local para ao final de cada teste para manter um padrao devido ao looping de leitura do aqruivo .cvs
+//	@After
+//	public void tiraScreenshot() throws IOException {
+//		//screenshot.tirarScreenshot();
+//	}
+	
 	@AfterClass
 	public static void finaliza() throws IOException{
 		

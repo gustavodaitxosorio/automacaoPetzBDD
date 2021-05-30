@@ -8,19 +8,19 @@ public class CarrinhoPage extends BasePage {
 	
 	public String getNomeProdutoCarrinho(int num) {
 		esperarElemento(By.xpath("(//td[@class=\"td-resumo\"]/a)["+num+"]"));
-		String nomeProduto = obterTexto(By.xpath("(//td[@class=\"td-resumo\"]/a)["+num+"]"));
+		String nomeProduto = obterTextoVisivel(By.xpath("(//td[@class=\"td-resumo\"]/a)["+num+"]"));
 		return nomeProduto;
 	}
 
 	public String getPrecoCarrinho(int num) {
 		esperarElemento(By.xpath("(//td[@class=\"preco\"])["+num+"]"));
-		String precoNormal = obterTexto(By.xpath("(//td[@class=\"preco\"])["+num+"]"));
+		String precoNormal = obterTextoVisivel(By.xpath("(//td[@class=\"preco\"])["+num+"]"));
 		return precoNormal;
 	}
 
 	public float obterValorTotalCarrinho() {
 		esperarElemento(By.xpath("//div[@class=\"right subtotalCartToDropdown\"]"));
-		String valorTotal = obterTexto(By.xpath("//div[@class=\"right subtotalCartToDropdown\"]")).replace(',', '.');
+		String valorTotal = obterTextoVisivel(By.xpath("//div[@class=\"right subtotalCartToDropdown\"]")).replace(',', '.');
 		Float valorTotalFloat  = Float.parseFloat(valorTotal.substring(2));
 		return valorTotalFloat;
 	}

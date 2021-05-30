@@ -12,23 +12,23 @@ public class ResultPage extends BasePage {
 	}	
 	
 	public String getNomeProduto() {
-		String nomeProduto = obterTexto(By.xpath("//h1[@itemprop=\"name\"]"));
+		String nomeProduto = obterTextoVisivel(By.xpath("//h1[@itemprop=\"name\"]"));
 		return nomeProduto;
 	}
 
 	//considerando que o fornecedor eh a marca em si, pois nao tem fornecedor na pagina
 	public String getNomeFornecedor() {
-		String nomeFornecedor = obterTexto(By.xpath("//a[@itemprop=\"brand\"]"));
+		String nomeFornecedor = obterTextoVisivel(By.xpath("//a[@itemprop=\"brand\"]"));
 		return nomeFornecedor;
 	}
 
 	public String getPrecoNormal() {
-		String precoNormal = obterTexto(By.xpath("//div[@class=\"price-current\"]"));
+		String precoNormal = obterTextoVisivel(By.xpath("//div[@class=\"price-current\"]"));
 		return precoNormal;
 	}
 
 	public String getPrecoAssinante() {
-		String precoAssinante = obterTexto(By.xpath("//span[@class=\"price-subscriber\"]"));
+		String precoAssinante = obterTextoVisivel(By.xpath("//span[@class=\"price-subscriber\"]"));
 		return precoAssinante;
 	}
 	

@@ -1,0 +1,30 @@
+2021-05-30 00:27:50 INFO  cucumberSteps:48 - Produto ração pesquisado
+2021-05-30 00:27:50 INFO  cucumberSteps:63 - Produto racao selecionado
+2021-05-30 00:27:52 INFO  cucumberSteps:74 - Coletadas as informações do Produto
+2021-05-30 00:27:52 INFO  cucumberSteps:84 - Coletadas as informações do Produto
+2021-05-30 00:27:52 INFO  cucumberSteps:93 - Produto adicionado no carrinho com sucesso
+2021-05-30 00:27:54 INFO  cucumberSteps:102 - Comparacoes do produto na pagina de detalhes com o carrinho feito com sucesso
+2021-05-30 00:27:54 INFO  cucumberSteps:111 - Comparacoes do produto na pagina de detalhes com o carrinho feito com sucesso
+2021-05-30 00:27:57 INFO  cucumberSteps:48 - Produto ração pesquisado
+2021-05-30 00:27:57 INFO  cucumberSteps:63 - Produto racao selecionado
+2021-05-30 00:27:59 INFO  cucumberSteps:74 - Coletadas as informações do Produto
+2021-05-30 00:27:59 INFO  cucumberSteps:84 - Coletadas as informações do Produto
+2021-05-30 00:27:59 INFO  cucumberSteps:93 - Produto adicionado no carrinho com sucesso
+2021-05-30 00:28:01 INFO  cucumberSteps:102 - Comparacoes do produto na pagina de detalhes com o carrinho feito com sucesso
+2021-05-30 00:28:01 INFO  cucumberSteps:111 - Comparacoes do produto na pagina de detalhes com o carrinho feito com sucesso
+2021-05-30 00:28:04 INFO  cucumberSteps:48 - Produto ração pesquisado
+2021-05-30 00:28:04 INFO  cucumberSteps:63 - Produto racao selecionado
+2021-05-30 00:28:06 INFO  cucumberSteps:74 - Coletadas as informações do Produto
+2021-05-30 00:28:06 INFO  cucumberSteps:84 - Coletadas as informações do Produto
+2021-05-30 00:28:06 INFO  cucumberSteps:93 - Produto adicionado no carrinho com sucesso
+2021-05-30 00:28:08 INFO  cucumberSteps:102 - Comparacoes do produto na pagina de detalhes com o carrinho feito com sucesso
+2021-05-30 00:28:08 INFO  cucumberSteps:111 - Comparacoes do produto na pagina de detalhes com o carrinho feito com sucesso
+2021-05-30 00:28:10 INFO  cucumberSteps:121 - Estou na pagina de login
+2021-05-30 00:28:11 INFO  cucumberSteps:130 - Forneci usuario  e senha 123 ao sistema
+2021-05-30 00:28:11 INFO  cucumberSteps:141 - Recebi a mensagem: 
+2021-05-30 00:28:13 INFO  cucumberSteps:121 - Estou na pagina de login
+2021-05-30 00:28:13 INFO  cucumberSteps:130 - Forneci usuario test e senha  ao sistema
+2021-05-30 00:28:13 INFO  cucumberSteps:141 - Recebi a mensagem: 
+2021-05-30 00:28:15 INFO  cucumberSteps:121 - Estou na pagina de login
+2021-05-30 00:28:16 INFO  cucumberSteps:130 - Forneci usuario test e senha 123 ao sistema
+2021-05-30 00:28:16 INFO  cucumberSteps:141 - Recebi a mensagem: Dados incorretos!

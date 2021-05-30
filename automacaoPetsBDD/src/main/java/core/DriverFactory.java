@@ -24,9 +24,10 @@ public class DriverFactory {
         			ops.addArguments("--disable-notifications");
         			ops.addArguments("--disable-popup-blocking");
 		driver = new ChromeDriver(ops);
+		driver.manage().window().setSize(new Dimension(1250, 1050));	
 		break;
 		}}
-		driver.manage().window().setSize(new Dimension(1250, 1050));			
+		
 		return driver;
 	}
 
