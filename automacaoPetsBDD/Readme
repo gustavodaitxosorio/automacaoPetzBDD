@@ -1,0 +1,50 @@
+Readme
+
+Hello :D Obrigado por ler esse arquivo ! 
+
+Projeto de automacao em BDD do site do PETZ
+Projeto idealizado BDD gherkin em java, utilizando o conceito de POO e DRY dentro da arquitetura do projeto
+
+
+Objetivo: Realizar testes FrontEnd na plataforma do site da Petz, utilizando Selenium WebDriver em java.
+
+A seguir o funcionamento basico do projeto:
+
+- O projeto atualmente possui execucao linear, nao sendo configurado no maven e no arquivo POM a execucao multiThread.
+
+- O projeto possui, em macro visao digamos, tres camadas de programacao aplicadas, alguns pontos importantes 
+	1ª - Classes de Gherkin BDD
+	2ª - Classes de testes
+	3ª - Classes de pages
+
+- O projeto possui algumas configuracoes de execução:
+	- Atualmente eh possivel:
+	 	- Limpar os logs. 
+	 	- Fechar o browser.
+	 	- Tirar screenshots.
+	 	- Limpar evidenciar.
+
+=================================================================
+
+
+Pontos pendentes de melhorias do projeto:
+
+
+1 - Trazer todas as bibliotecas e dependencias para dentro do projeto e nao em pasta do sistema operacional
+
+2 - Alterar os nomes dos testes para uma melhor legibilidade
+
+3 - Melhorar o processo de log trazendo mais detalhes das ações tomadas
+
+4 - Melhorar o processo de log incrementando os locais de ações de logs
+
+5 - Verificar se todos os locais estao com path relativos do projeto e com formato para outros SO's 
+
+
+
+
+
+
+
+
+
